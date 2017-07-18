@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.maincontent {
+    position: relative;
+    top: 60px;
+    float: left;
+}
+

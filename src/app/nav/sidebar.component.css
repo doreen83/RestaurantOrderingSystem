@@ -1,0 +1,25 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10%;
+    font-size: 20px;
+    float: left;
+    width: 15%;
+}
+
+li a {
+    display: block;
+    width: 100px;
+    text-decoration: none;  
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li a:hover {
+    background-color:green;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
