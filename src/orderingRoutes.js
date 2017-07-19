@@ -10,3 +10,5 @@ var routes = function(orderItem) { // also pass cart or session id?
 
     });
 }
+
+module.exports = routes;
