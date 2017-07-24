@@ -51,7 +51,7 @@
   "defaults": {
     "serve": {
       "port" : 2500
-    }
+    },
     "styleExt": "css",
     "prefixInterfaces": false,
     "inline": {
