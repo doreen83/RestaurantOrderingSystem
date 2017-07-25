@@ -6,9 +6,12 @@ import { IMenuItem } from './menuitem.model'
     templateUrl: './ordering.html'
 })
 export class OrderingComponent {
-    items:IMenuItem[];
+    items:IMenuItem[] = [];
     
-    constructor(menuService:MenuService) {
-        this.items = menuService.getMenuItems();
+    constructor(private menuService:MenuService) {
+    }
+    
+    ngOnInit() {
+        this.menuService.getMenuItems().subscribe(p=> this.items = p);
     }
 }
