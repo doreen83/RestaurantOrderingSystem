@@ -36,8 +36,8 @@ db.menuitems.insert([
         imageUrl: 'someUrl'
     },
     {
-        name: 'ci,nnamomn bun',
-        description: 'cunnamon bun desc',
+        name: 'cinnamomn bun',
+        description: 'cinnamomn bun desc',
         price: 8.5,
         imageUrl: 'someUrl'
     },

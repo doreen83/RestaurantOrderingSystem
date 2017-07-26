@@ -12,8 +12,7 @@ export class MenuService {
     getMenuItems():Observable<IMenuItem[]> {
         //    return MENU_ITEMS
         console.log('getting menu items')
-        let menuItems = this.http.get('http://localhost:5000/menu', {headers: this.getHeaders()})
-        .map(mapMenuItems)
+        let menuItems = this.http.get('http://localhost:5000/menu', {headers: this.getHeaders()}) .map(mapMenuItems)
         console.log('got menu items: ' + menuItems)
         return menuItems
     }
@@ -26,7 +25,8 @@ export class MenuService {
 }
 
 function mapMenuItems(response:Response): IMenuItem[]{
-   return response.json().results.map(toMenuItem)
+   console.log('response: ' + response.json().results);
+   return response.json().map(toMenuItem)
 }
 
 function toMenuItem(r:any): IMenuItem{
