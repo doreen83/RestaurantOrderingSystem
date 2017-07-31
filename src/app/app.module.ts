@@ -14,6 +14,7 @@ import { appRoutes } from './routes'
 import { MenuService } from './ordering/menu.service'
 import { MenuItemComponent } from './ordering/menuitem.component'
 import { ShoppingcartService } from './ordering/shoppingcart.service'
+import { HeaderComponent } from './header.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ShoppingcartService } from './ordering/shoppingcart.service'
     MenuComponent,
     OrderingComponent,
     SideNavbarComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

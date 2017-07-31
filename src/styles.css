@@ -1,11 +1,18 @@
 body {
     background-color: black;
+    font-family: Trebuchet MS;
     color: white;
+    line-height: 150%;
 }
 
+
 .maincontent {
-    position: relative;
+    /*position: relative;
     top: 60px;
-    float: left;
+    float: left;*/
+    padding-top: 60px;
+    transition: margin-left .5s;
+    width: 80%;
+    font-family: Tahoma;
 }
 
