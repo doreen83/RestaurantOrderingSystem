@@ -1,0 +1,8 @@
+<td class="name-and-desc"> 
+    <span class="item-name">{{item.name}}</span><br />
+    <span>{{item.desc}}</span> 
+</td>
+<td class="price-and-order">
+    <span class="item-price">${{item.price}}</span>
+    <button hidden (click)="shoppingcartService.addItemToCart()">Order</button>
+</td>

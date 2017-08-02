@@ -32,7 +32,9 @@ function mapMenuItems(response:Response): IMenuItem[]{
 function toMenuItem(r:any): IMenuItem{
   let menuItem = <IMenuItem>({
     //id: extractId(r),
-    name: r.name
+    name: r.name,
+    price: r.price,
+    desc: r.description
   });
   console.log('Parsed menu item:', menuItem);
   return menuItem;

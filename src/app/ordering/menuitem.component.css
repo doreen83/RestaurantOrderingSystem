@@ -1,0 +1,16 @@
+.item-name {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.item-price {
+    margin-left: 10px;
+}
+
+.name-and-desc {
+    text-align: left;
+}
+
+.price-and-order {
+    text-align: right;
+}

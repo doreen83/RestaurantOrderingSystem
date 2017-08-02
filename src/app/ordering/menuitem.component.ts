@@ -4,10 +4,8 @@ import { IMenuItem } from './menuitem.model'
 
 @Component ({
     selector: 'menu-item',
-    template: `
-        <p class="item-name">{{item.name}} {{item.price}}</p>
-        <p class="item-price">{{item.desc}} <button (click)="shoppingcartService.addItemToCart()">Order</button></p>
-    `
+    templateUrl: './menuitem.component.html',
+    styleUrls: ['./menuitem.component.css']
 })
 export class MenuItemComponent {
     @Input() item:IMenuItem
