@@ -1,4 +1,10 @@
 <table>
+    <thead>
+        <tr>
+          <th class="row-1 name-and-desc">name and desc</th>
+          <th class="row-2 price-and-order">price and order</th>
+        </tr>
+    </thead>
     <tbody>
         <tr *ngFor="let item of items">
             <menu-item [item]="item"></menu-item>

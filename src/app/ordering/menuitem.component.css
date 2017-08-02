@@ -1,3 +1,7 @@
+table {
+  table-layout: fixed;
+}
+
 .item-name {
     font-size: 150%;
     font-weight: bold;
@@ -9,8 +13,10 @@
 
 .name-and-desc {
     text-align: left;
+    width: 50%;
 }
 
 .price-and-order {
     text-align: right;
+    width: 50%;
 }
