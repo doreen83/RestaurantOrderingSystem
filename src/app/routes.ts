@@ -5,8 +5,10 @@ import { MenuComponent } from './menu.component'
 import { OrderingComponent} from './ordering/ordering.component'
 
 export const appRoutes:Routes = [
+    { path: '', component: AboutUsComponent},
     { path: 'aboutus', component: AboutUsComponent },
     { path: 'hoursandlocation', component: HoursAndLocationComponent },
     //{ path: 'menu', component: MenuComponent},
-    { path: 'ordering', component: OrderingComponent}
+    { path: 'ordering', component: OrderingComponent},
+    { path: '**', redirectTo: '' }
 ]
