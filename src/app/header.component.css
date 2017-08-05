@@ -5,6 +5,15 @@
     text-align: center;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
 .socialmediablock {
     position: absolute;
     right: 200px;

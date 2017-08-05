@@ -1,7 +1,8 @@
 body {
-    background-color: black;
+    --main-text-color: #00008B;
+    background-color: #87CEFA;
     font-family: proxima-nova;
-    color: white;
+    color: var(--main-text-color);;
     line-height: 150%;
     font-weight: 500;
 }
@@ -11,7 +12,7 @@ body {
     /*position: relative;
     top: 60px;
     float: left;*/
-    padding-top: 60px;
+    padding-top: 10px;
     transition: margin-left .5s;
     width: 80%;
     line-height: 1.5em;
@@ -20,6 +21,6 @@ body {
 }
 
 a:visited {
-    color: white;
+    color: var(--main-text-color);
     text-decoration: none;  
 }

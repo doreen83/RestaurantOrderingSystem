@@ -7,6 +7,6 @@ import { OrderingComponent} from './ordering/ordering.component'
 export const appRoutes:Routes = [
     { path: 'aboutus', component: AboutUsComponent },
     { path: 'hoursandlocation', component: HoursAndLocationComponent },
-    { path: 'menu', component: MenuComponent},
+    //{ path: 'menu', component: MenuComponent},
     { path: 'ordering', component: OrderingComponent}
 ]

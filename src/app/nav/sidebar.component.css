@@ -30,12 +30,12 @@ li a {
 
 li a:hover {
     background-color:deepskyblue;
-    color: white;
+    color: var(--main-text-color);
 }
 
 
 a:visited {
-    color: white;
+    color: var(--main-text-color);
 }
 
 .socialmediaimg {
