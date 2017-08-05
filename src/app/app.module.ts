@@ -15,6 +15,8 @@ import { MenuService } from './ordering/menu.service'
 import { MenuItemComponent } from './ordering/menuitem.component'
 import { ShoppingcartService } from './ordering/shoppingcart.service'
 import { HeaderComponent } from './header.component'
+import { AgmCoreModule } from '@agm/core';
+import { GooglemapsComponent } from './googlemaps.component'
 
 @NgModule({
   declarations: [
@@ -25,13 +27,17 @@ import { HeaderComponent } from './header.component'
     OrderingComponent,
     SideNavbarComponent,
     MenuItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    GooglemapsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAGr6CUycwKRsjjHb7JNXKT-kc5qobt-FQ'
+    })
   ],
   providers: [MenuService, ShoppingcartService],
   bootstrap: [AppComponent]
