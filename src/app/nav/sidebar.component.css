@@ -16,6 +16,10 @@ ul {
     list-style-type: none; 
 }
 
+.socialmediarow {
+    padding-left: 10px;
+}
+
 li a {
     display: block;
     width: 100px;
@@ -29,6 +33,13 @@ li a:hover {
     color: white;
 }
 
+
 a:visited {
     color: white;
 }
+
+.socialmediaimg {
+    width: 25px;
+    height: 25px;
+}
+

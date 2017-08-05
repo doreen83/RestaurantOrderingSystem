@@ -1,7 +1,8 @@
 import { Component } from '@angular/core'
 
 @Component ({
-    templateUrl: './aboutus.html'
+    templateUrl: './aboutus.component.html',
+    styleUrls: ['./aboutus.component.css']
 })
 export class AboutUsComponent {
     

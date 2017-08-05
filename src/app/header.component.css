@@ -4,3 +4,12 @@
     width: 100%;
     text-align: center;
 }
+
+.socialmediablock {
+    position: absolute;
+    right: 200px;
+}
+.socialmediaimg {
+    width: 35px;
+    height: 35px;
+}

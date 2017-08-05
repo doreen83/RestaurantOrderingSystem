@@ -1,0 +1,8 @@
+.instagramwidget {
+    width: 50%;
+    border: 0; 
+    height: 500px; 
+    display: block; 
+    margin-left: 20%; 
+    overflow: hidden;
+}
