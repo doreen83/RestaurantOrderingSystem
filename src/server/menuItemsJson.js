@@ -1,19 +1,19 @@
 db.menuitems.insert([
     {
-        name: 'nachos',
-        description: 'some nachos',
+        name: 'Cauliflower Wings',
+        description: 'Fried crispy and sauced with out spicy buffalo sauce. Served with ranch',
+        price: 8,
+        imageUrl: 'someUrl'
+    },
+    {
+        name: 'Nachos',
+        description: 'Thick cut tortillas covered in our Cuban black beans, steak seitan, sour cream and our house mango salsa',
         price: 10,
         imageUrl: 'someUrl'
     },
     {
-        name: 'mac and cheese',
-        description: 'mac with some cheese on it',
-        price: 11,
-        imageUrl: 'someUrl'
-    },
-    {
-        name: 'burger'
-        description: 'a veggie pattie with a side of fries',
+        name: 'Chili Cheese Fries'
+        description: 'Covered with our hose chili and cheddar cheese sauce',
         price: 12,
         imageUrl: 'someUrl'
     },

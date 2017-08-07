@@ -8,12 +8,20 @@ const menuItem = require('./server/models/menuItem');
 const orderItem = require('./server/models/orderItem');
 const orderItemRouter = require('./server/routes/orderItemRouter')(orderItem);
 const menuItemRouter = require('./server/routes/menuItemRouter')(menuItem);
+var cors = require('cors');
 
 // DB connection
 var db = mongoose.connect('mongodb://localhost/orderingAPI');
 
 // Express app
 const app = express();
+//app.use(cors({origin: 'http://localhost:5000'}));
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use('/ordering', orderItemRouter);
