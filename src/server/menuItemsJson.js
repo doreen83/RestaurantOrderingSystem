@@ -2,61 +2,78 @@ db.menuitems.insert([
     {
         name: 'Cauliflower Wings',
         description: 'Fried crispy and sauced with out spicy buffalo sauce. Served with ranch',
-        price: 8,
+        category: 'Appetizers',
+        prices: [8],
         imageUrl: 'someUrl'
     },
     {
         name: 'Nachos',
         description: 'Thick cut tortillas covered in our Cuban black beans, steak seitan, sour cream and our house mango salsa',
-        price: 10,
+        category: 'Appetizers',
+        prices: [10],
         imageUrl: 'someUrl'
     },
     {
         name: 'Chili Cheese Fries'
         description: 'Covered with our hose chili and cheddar cheese sauce',
-        price: 12,
+        category: 'Appetizers',
+        prices: [7],
         imageUrl: 'someUrl'
     },
     {
-        name: 'pizza',
-        description: 'Deep dish pizza',
-        price: 9.5,
+        name: 'Fig and Onion Tartine',
+        description: 'Rustic bread toasted with cashew herb Ricotta and fig and carmelized onion compote',
+        category: 'Appetizers',
+        prices: [8],
         imageUrl: 'someUrl'
     },
     {
-        name: 'cauliflower wings',
-        description: 'cauliflower fried in bbq sauce',
-        price: 10,
+        name: 'Pepperoni',
+        description: 'Housemade Pepperoni and Cheese',
+        category: 'Pizza',
+        prices: [20,23],
         imageUrl: 'someUrl'
     },
     {
-        name: 'chicken sandwich',
-        description: 'a chicken sandwich',
-        price: 8,
+        name: 'Fully Loaded',
+        description: 'Vegan sausage, Giardiniera, spinach, onions and olives with our vegan Mozzarella',
+        category: 'Pizza',
+        prices: [22,25],
         imageUrl: 'someUrl'
     },
     {
-        name: 'cinnamomn bun',
-        description: 'cinnamomn bun desc',
-        price: 8.5,
+        name: 'Artocracy',
+        description: 'Roasted artichokes, onions, garlic and spinach. With out housemade vegan Mozzarella and tomato sauce',
+        category: 'Pizza',
+        prices: [21,24],
         imageUrl: 'someUrl'
     },
     {
-        name: 'pie',
-        description: 'apple pie',
-        price: 10,
+        name: 'Cheese',
+        description: 'Filled with our savory house vegan Mozzarella and sauce',
+        category: 'Pizza',
+        prices: [18, 21]
         imageUrl: 'someUrl'
     },
     {
-        name: 'cake',
-        description: 'chocolate cake',
-        price: 11,
+        name: 'Chipotle Cheddar',
+        description: 'Chipotle BBQ sauce and smokey vegan Cheddar cheese, with crispy fried onions and ranch',
+        category: 'Burgers',
+        prices: [13],
         imageUrl: 'someUrl'
     },
     {
-        name: 'a drink',
-        description: 'mango drink',
-        price: 16,
+        name: 'Big K',
+        description: 'With smokey Cheddar and our house burger sauce',
+        category: 'Burgers',
+        price: [13],
+        imageUrl: 'someUrl'
+    },
+    {
+        name: 'Pizza Burger',
+        description: 'Marinara, cheese, Pepperoni on our burger patty',
+        category: 'Burgers',
+        price: [13],
         imageUrl: 'someUrl'
     }
 ])

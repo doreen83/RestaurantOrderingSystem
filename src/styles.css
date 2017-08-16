@@ -5,6 +5,7 @@ body {
     color: var(--main-text-color);;
     line-height: 150%;
     font-weight: 500;
+    white-space:nowrap;
 }
 
 

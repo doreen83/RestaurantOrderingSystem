@@ -1,6 +1,5 @@
 const express = require('express');
 
-
 var getMenuItemRouter = function(MenuItem){
     const menuItemRouter = express.Router();
     menuItemRouter.route('/')

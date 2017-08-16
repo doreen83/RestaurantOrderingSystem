@@ -33,12 +33,15 @@ function toMenuItem(r:any): IMenuItem{
   let menuItem = <IMenuItem>({
     //id: extractId(r),
     name: r.name,
-    price: r.price,
-    desc: r.description
+    prices: r.prices,
+    description: r.description,
+    category: r.category
   });
   console.log('Parsed menu item:', menuItem);
   return menuItem;
 }
+
+
 const MENU_ITEMS = [
     {
         id: '1',

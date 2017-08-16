@@ -1,6 +1,7 @@
 export interface IMenuItem {
     id: string
     name: string
-    desc: string
-    price: number
+    description: string
+    category: string
+    prices: [number]
 }
