@@ -3,11 +3,11 @@
     <span>{{item.desc}}</span> 
 </td>
 <td class="price-and-order">
-    <span *ngFor="let category in categories">
+    <!--<span *ngFor="let category in categories">-->
         <span *ngFor="let price of item.prices; let i=index; let lastitem=last" class="item-price">
             <span *ngIf="!lastitem">${{price}}/</span>
             <span *ngIf="lastitem">{{price}}</span>
         </span>
         <button hidden (click)="shoppingcartService.addItemToCart()">Order</button>
-    </span>
+    <!--</span>-->
 </td>

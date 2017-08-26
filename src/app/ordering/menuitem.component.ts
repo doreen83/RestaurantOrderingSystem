@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core'
 import { ShoppingcartService } from './shoppingcart.service'
 import { IMenuItem } from './menuitem.model'
+import { IMenuCategory } from './menucategory.model'
 
 @Component ({
     selector: 'menu-item',
@@ -9,7 +10,8 @@ import { IMenuItem } from './menuitem.model'
 })
 export class MenuItemComponent {
     @Input() item:IMenuItem
-
+    @Input() categories:IMenuCategory[]
+    
     constructor(private shoppingcartService:ShoppingcartService) {
 
     }

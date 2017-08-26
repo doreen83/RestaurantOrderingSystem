@@ -6,8 +6,10 @@ const express = require('express'),
 // Models
 const menuItem = require('./server/models/menuItem');
 const orderItem = require('./server/models/orderItem');
+const menuCategory = require('./server/models/menuCategory');
 const orderItemRouter = require('./server/routes/orderItemRouter')(orderItem);
 const menuItemRouter = require('./server/routes/menuItemRouter')(menuItem);
+const menuCategoryRouter = require('./server/routes/menuCategoryRouter')(menuCategory);
 var cors = require('cors');
 
 // DB connection
@@ -25,7 +27,8 @@ app.use(function(req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use('/ordering', orderItemRouter);
-app.use('/menu', menuItemRouter);
+app.use('/menuItem', menuItemRouter);
+app.use('/menuCategory', menuCategoryRouter);
 //app.route('/').get(function(req,res,next) {
 //    res.send('k17!');
 //});

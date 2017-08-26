@@ -4,8 +4,8 @@ var mongoose = require('mongoose'),
 var menuCategoryModel = new Schema({
     name: {type: String},
     description: {type: String},
-    options: {type: String[]}
-    prices: {type: Number[]},
+    options: {type: [String]},
+    prices: {type: [Number]},
 });
 
 module.exports = mongoose.model('MenuCategory', menuCategoryModel);
