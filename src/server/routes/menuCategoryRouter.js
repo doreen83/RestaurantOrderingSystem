@@ -7,7 +7,7 @@ var getMenuCategoryRouter = function(MenuCategory) {
             MenuCategory.find(function(err,menuCategories) {
                 if (err)
                     res.status(500).send(err);
-                else
+                else 
                     res.json(menuCategories);
             });
         })

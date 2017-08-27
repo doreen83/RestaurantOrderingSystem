@@ -1,13 +1,12 @@
 <td class="name-and-desc"> 
     <span class="item-name">{{item.name}}</span><br />
-    <span>{{item.desc}}</span> 
+    <span class="item-description">{{item.description}}</span> 
 </td>
 <td class="price-and-order">
-    <!--<span *ngFor="let category in categories">-->
-        <span *ngFor="let price of item.prices; let i=index; let lastitem=last" class="item-price">
-            <span *ngIf="!lastitem">${{price}}/</span>
-            <span *ngIf="lastitem">{{price}}</span>
-        </span>
-        <button hidden (click)="shoppingcartService.addItemToCart()">Order</button>
-    <!--</span>-->
+    <span *ngFor="let price of item.prices; let i=index; let lastitem=last" class="item-price">
+        <!--<span *ngIf="!lastitem">${{price}}/</span>
+        <span *ngIf="lastitem">{{price}}</span>-->
+        ${{price}}<ng-container *ngIf="!lastitem">/</ng-container>
+    </span>
+    <button hidden (click)="shoppingcartService.addItemToCart()">Order</button>
 </td>

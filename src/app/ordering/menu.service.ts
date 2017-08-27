@@ -10,6 +10,7 @@ export class MenuService {
     constructor(private http: Http) {
         
     }
+    
     getMenuItems():Observable<IMenuItem[]> {
         //    return MENU_ITEMS
         console.log('getting menu items')
@@ -21,6 +22,7 @@ export class MenuService {
     getMenuCategories():Observable<IMenuCategory[]> {
         console.log('getting menu categories')
         let menuCategories = this.http.get('http://localhost:5000/menuCategory', {headers: this.getHeaders()}).map(mapMenuCategories)
+        console.log('returning menu categories from service: ' + menuCategories)
         return menuCategories
     }
     

@@ -5,7 +5,7 @@ body {
     color: var(--main-text-color);;
     line-height: 150%;
     font-weight: 500;
-    white-space:nowrap;
+    /*white-space:nowrap;*/
 }
 
 
@@ -19,9 +19,22 @@ body {
     line-height: 1.5em;
     letter-spacing: 0.06em;
     font-size: 12.5;
+    word-wrap: break-word;
 }
 
 a:visited {
     color: var(--main-text-color);
     text-decoration: none;  
 }
+
+
+table {
+    table-layout: fixed; 
+    width: 400px;
+}
+
+table td {
+    word-wrap: break-word;
+    overflow-wrap: break-word
+}
+

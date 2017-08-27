@@ -4,7 +4,8 @@ import { IMenuItem } from './menuitem.model'
 import { IMenuCategory } from './menucategory.model'
 
 @Component({
-    templateUrl: './ordering.html'
+    templateUrl: './ordering.html',
+    styleUrls: ['./ordering.component.css']
 })
 export class OrderingComponent {
     items:IMenuItem[] = [];
@@ -14,7 +15,7 @@ export class OrderingComponent {
     }
     
     ngOnInit() {
-        this.menuService.getMenuItems().subscribe(p=> this.items = p);
-        this.menuService.getMenuCategories().subscribe(p=> this.categories = p);
+        this.menuService.getMenuItems().subscribe(p=> this.items = p)
+        this.menuService.getMenuCategories().subscribe(p=> this.categories = p)
     }
 }
