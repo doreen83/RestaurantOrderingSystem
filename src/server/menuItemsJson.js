@@ -66,14 +66,14 @@ db.menuitems.insert([
         name: 'Big K',
         description: 'With smokey Cheddar and our house burger sauce',
         category: 'Burgers',
-        price: [13],
+        prices: [13],
         imageUrl: 'someUrl'
     },
     {
         name: 'Pizza Burger',
         description: 'Marinara, cheese, Pepperoni on our burger patty',
         category: 'Burgers',
-        price: [13],
+        prices: [13],
         imageUrl: 'someUrl'
     }
 ])

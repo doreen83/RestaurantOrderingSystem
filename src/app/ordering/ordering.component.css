@@ -1,6 +1,11 @@
 .menucategory {
-    font-size: 150%;
+    font-size: 190%;
     font-weight: bold;
     line-height: 70px;
 }
 
+.category-description {
+    font-size: 40%;
+    font-weight: normal;
+    text-align: right;
+}

@@ -7,7 +7,10 @@
     </thead>
     <tbody>
         <ng-container  *ngFor="let category of categories">
-            <tr class="menucategory">{{category.name}}</tr>
+            <tr class="menucategory">
+                {{category.name}}
+                <span class="category-description">{{category.description}}</span>
+            </tr>
             <ng-container *ngFor="let item of items">
                <ng-container *ngIf="item.category === category.name">
                    <tr><menu-item [item]="item"></menu-item></tr>

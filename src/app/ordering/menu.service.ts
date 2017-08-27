@@ -34,12 +34,10 @@ export class MenuService {
 }
 
 function mapMenuItems(response:Response): IMenuItem[]{
-    console.log('response: ' + response.json().results);
     return response.json().map(toMenuItem)
 }
 
 function mapMenuCategories(response:Response): IMenuCategory[] {
-    console.log('response: ' + response.json().results);
     return response.json().map(toMenuCategory); 
 }
 
@@ -55,15 +53,15 @@ function toMenuCategory(r:any): IMenuCategory{
 }
 
 function toMenuItem(r:any): IMenuItem{
-  let menuItem = <IMenuItem>({
+    let menuItem = <IMenuItem>({
     //id: extractId(r),
-    name: r.name,
-    prices: r.prices,
-    description: r.description,
-    category: r.category
-  });
-  console.log('Parsed menu item: ', menuItem);
-  return menuItem;
+        name: r.name,
+        prices: r.prices,
+        description: r.description,
+        category: r.category
+    });
+    console.log('Parsed menu item: ', menuItem);
+    return menuItem;
 }
 
 

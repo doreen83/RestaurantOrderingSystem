@@ -3,7 +3,7 @@
     <span class="item-description">{{item.description}}</span> 
 </td>
 <td class="price-and-order">
-    <span *ngFor="let price of item.prices; let i=index; let lastitem=last" class="item-price">
+    <span *ngFor="let price of item.prices; let lastitem=last" class="item-price">
         <!--<span *ngIf="!lastitem">${{price}}/</span>
         <span *ngIf="lastitem">{{price}}</span>-->
         ${{price}}<ng-container *ngIf="!lastitem">/</ng-container>

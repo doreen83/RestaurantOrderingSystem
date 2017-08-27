@@ -14,21 +14,20 @@
 }
 
 .item-description {
-    word-break: break-all;
-    word-wrap: break-word;
+    word-break: keep-all;
     font-size: 80%;
 }
 
 .name-and-desc {
     text-align: left;
     width: 320px;
-    overflow-wrap: break-word;
+    word-break: keep-all;
     /*width: 80%;*/
 }
 
 .price-and-order {
     text-align: right;
     width: 80px;
-    word-wrap: break-word;
+    word-break: keep-all;
     /*width: 20%;*/
 }
