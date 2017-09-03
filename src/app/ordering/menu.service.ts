@@ -3,6 +3,7 @@ import { IMenuItem } from './menuitem.model'
 import { IMenuCategory } from './menucategory.model'
 import { Http, Response, Headers } from '@angular/http'
 import { Observable } from 'rxjs/Observable'
+import { environment } from '../../environments/environment';
 import 'rxjs/add/operator/map'
 
 @Injectable()
@@ -14,14 +15,14 @@ export class MenuService {
     getMenuItems():Observable<IMenuItem[]> {
         //    return MENU_ITEMS
         console.log('getting menu items')
-        let menuItems = this.http.get('http://localhost:5000/menuItem', {headers: this.getHeaders()}).map(mapMenuItems)
+        let menuItems = this.http.get(environment.nodeUrl + '/menuItem', {headers: this.getHeaders()}).map(mapMenuItems)
         console.log('got menu items: ' + menuItems)
         return menuItems
     }
     
     getMenuCategories():Observable<IMenuCategory[]> {
         console.log('getting menu categories')
-        let menuCategories = this.http.get('http://localhost:5000/menuCategory', {headers: this.getHeaders()}).map(mapMenuCategories)
+        let menuCategories = this.http.get(environment.nodeUrl + '/menuCategory', {headers: this.getHeaders()}).map(mapMenuCategories)
         console.log('returning menu categories from service: ' + menuCategories)
         return menuCategories
     }

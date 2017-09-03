@@ -17,7 +17,6 @@ var db = mongoose.connect('mongodb://localhost/orderingAPI');
 
 // Express app
 const app = express();
-//app.use(cors({origin: 'http://localhost:5000'}));
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -29,9 +28,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use('/ordering', orderItemRouter);
 app.use('/menuItem', menuItemRouter);
 app.use('/menuCategory', menuCategoryRouter);
-//app.route('/').get(function(req,res,next) {
-//    res.send('k17!');
-//});
-app.listen(PORT, function () {
+app.listen(PORT, "0.0.0.0", function () {
     console.log('running on port: ' + PORT);
 });
